@@ -2,8 +2,10 @@
 
 <h1>Compose</h1>
 <p>
-    <input type="text">
+    <form method="post" action="/compose">
+    <input type="text" name="postText">
     <button type="submit" name="publish">Publish</button>
+</form>
 </p>
 
 <%- include("partials/footer") -%>
