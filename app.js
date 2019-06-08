@@ -27,6 +27,10 @@ app.get("/contact", function (req, res) {
     res.render("contact", {contactContent: contactContent});    //This will render the contact.ejs file and pass over data in contactContent to contactContent tag in contact.ejs
 });
 
+app.get("/compose", function (req, res) {
+    res.render("compose");
+});
+
 
 
 
