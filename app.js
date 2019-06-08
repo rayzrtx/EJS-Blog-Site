@@ -19,6 +19,14 @@ app.get("/", function (req, res) {
     res.render("home", {homeContent: homeStartingContent}); //This will render the home.ejs file and pass over data in homeStartingContent to homeContent tag in home.ejs
 });
 
+app.get("/about", function (req, res) {
+    res.render("about", {aboutContent: aboutContent});  //This will render the about.ejs file and pass over data in aboutContent to aboutContent tag in about.ejs
+});
+
+app.get("/contact", function (req, res) {
+    res.render("contact", {contactContent: contactContent});    //This will render the contact.ejs file and pass over data in contactContent to contactContent tag in contact.ejs
+});
+
 
 
 
