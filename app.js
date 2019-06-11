@@ -18,8 +18,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 app.get("/", function (req, res) {
-    console.log(posts);
-    res.render("home", {homeContent: homeStartingContent}); //This will render the home.ejs file and pass over data in homeStartingContent to homeContent tag in home.ejs
+    res.render("home", {homeContent: homeStartingContent, newPostItems: posts}); //This will render the home.ejs file and pass over data in homeStartingContent to homeContent tag in home.ejs
 });
 
 app.get("/about", function (req, res) {
