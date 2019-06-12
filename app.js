@@ -41,8 +41,8 @@ app.get("/posts/:postName", function (req, res) {
         let actualPostTitle = lodash.lowerCase(post.postTitle);
 
         if (actualPostTitle === postName){ //Convert individual post name to lower case for string comparison
-            console.log("Match found!")
-        }else console.log("Match not found")
+            res.render("post", {postTitle: post.postTitle, postText: post.postText})    //Passing post title and text to post.ejs to display individual post on its own page if url route parameter and post title match
+        }
     });
 });
 
