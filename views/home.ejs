@@ -8,7 +8,7 @@
 <% newPostItems.forEach(function(postItem){ %>
 <h1><%= postItem.postTitle %> </h1>
 <p>
-    <%= postItem.postText %>
+    <%= postItem.postText.substring(0, 100) + " ..." %>
 </p>
 <% }); %>
 
