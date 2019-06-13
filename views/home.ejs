@@ -6,9 +6,11 @@
 </p>
 
 <% newPostItems.forEach(function(postItem){ %>
+
 <h1><%= postItem.postTitle %> </h1>
 <p>
     <%= postItem.postText.substring(0, 100) + " ..." %>
+    <a href= "/posts/<%=postItem.postTitle%>">Read More</a>
 </p>
 <% }); %>
 
